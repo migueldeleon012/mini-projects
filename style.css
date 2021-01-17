@@ -1,0 +1,118 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding:0;
+}
+
+header{
+    margin: auto;
+    background-color: #41a041;
+    padding: 3px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+
+h3{
+    font-size: 24px;
+    text-align: center;
+}
+
+.container{
+    margin: 30px auto;
+    padding: 20px;
+    width: 960px;
+    border: 1px solid #b4b4b4;
+}
+
+.productName{
+    display: flex;
+}
+
+label{
+    font-style: 18px;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    margin:0 10px 10px 10px ;
+    padding:5px;
+}
+
+input:focus{
+    border-color: #41a041 ;
+}
+
+
+.dateAndAmount{
+    display: flex;
+}
+
+.productDate{
+    display: flex;
+    flex-grow: 1;
+    width: 40%;
+}
+
+.productAmount{
+    display: flex;
+    flex-grow: 3;
+}
+
+.submitButton{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.btn{
+    margin: 20px;
+    padding:10px;
+    width: 150px;
+    background: #41a041;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:hover, button:focus{
+    border-color: white;
+}
+
+table{
+    width: 100%;
+    justify-content: center;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid #cfcfcf;
+    padding: 5px;
+}
+
+tr:nth-child(even){
+    background-color: #cfcfcf;
+}
+
+tr:nth-child(odd){
+    background-color:white;
+}
+
+.noItem{
+    text-align: center;
+}
+
+.deleteCell{
+    display: flex;
+    justify-content: center;
+}
+
+.deleteButton{
+    width: 60px;
+    height: 30px;
+}

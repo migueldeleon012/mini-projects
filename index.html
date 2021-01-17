@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EXPENSE TRACKER</title>
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+    
+    <div class="container">
+        <h3>Add a New Item:</h3>
+        <div class="productName">
+            <label for="products">Product:</label>
+            <input name="name" type="text" placeholder="Enter the product's name" id="products" required>    
+        </div>
+
+        <div class="dateAndAmount">
+            <div class="productDate">
+                <label for="dates">Date of Purchase:</label>
+                <input name="date" type="date" id="dates" required>
+            </div>
+            <div class="productAmount">
+                <label for="amounts">Amount:</label>
+                <input type="text" placeholder="Enter the amount of the product" id="amounts" required>
+            </div>
+        </div>
+
+        <div class="submitButton">
+            <button class="btn" id="submit" onclick="productSubmit();">Submit</button>
+            <button class="btn" id="deleteAll" onclick="deleteAllRows();">Delete All</button>
+        </div>
+        <div id="outputs">
+            <table id="table">
+                <tr id="tableTitles">
+                    <th>Product</th>
+                    <th>Date of Purchase</th>
+                    <th>Amount</th>
+                    <th>Delete</th>
+                </tr>
+                <tr id="deleteAfter">
+                    <td class="noItem" colspan="4" >No products are entered!</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
