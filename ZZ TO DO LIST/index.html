@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>To Do List</h1>
+    </header>
+    <div class="container">
+        <div class="inputs">
+            <div>
+                <input type="text" placeholder="Enter your agenda" id="agenda" onclick="getFocused();">
+            </div>
+            <div>
+                <button id="btn" onclick="writeToDoList();"> Enter</button>  
+            </div>
+        </div>
+
+        <div id="outputs">
+            <ol id="result">
+            </ol>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
